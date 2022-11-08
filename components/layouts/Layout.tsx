@@ -7,7 +7,7 @@ type Props = {
   title?: string,
 };
 
-const origin = (typeof window === undefined) ? '' : window.location.origin;
+const origin = (typeof window === 'undefined') ? '' : window.location.origin;
 
 export const Layout = ({ children, title }: Props) => {
 
